@@ -11,8 +11,8 @@
         :root {
             --primary-dark: #0a0a0a;
             --secondary-dark: #1a1a1a;
-            --accent-orange: #ff6b35;
-            --accent-orange-hover: #e55a2b;
+            --accent-blue: #007bff;
+            --accent-blue-hover: #0056b3;
             --text-primary: #ffffff;
             --text-secondary: #b0b0b0;
             --glass-bg: rgba(26, 26, 26, 0.8);
@@ -50,7 +50,7 @@
         }
 
         .navbar-brand:hover {
-            color: var(--accent-orange) !important;
+            color: var(--accent-blue) !important;
             transform: scale(1.05);
         }
 
@@ -65,14 +65,14 @@
         }
 
         .nav-link:hover {
-            color: var(--accent-orange) !important;
-            background: rgba(255, 107, 53, 0.1);
+            color: var(--accent-blue) !important;
+            background: rgba(0, 123, 255, 0.1);
             transform: translateY(-2px);
         }
 
         .nav-link.active {
-            color: var(--accent-orange) !important;
-            background: rgba(255, 107, 53, 0.15);
+            color: var(--accent-blue) !important;
+            background: rgba(0, 123, 255, 0.15);
         }
 
         /* Hero Section */
@@ -96,7 +96,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 50%, rgba(0, 123, 255, 0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -117,7 +117,7 @@
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-orange) 100%);
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-blue) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -145,7 +145,7 @@
         }
 
         .power-table th {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-hover) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%);
             color: white;
             padding: 1.5rem 1rem;
             font-weight: 700;
@@ -157,7 +157,7 @@
 
         .power-table th:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
         }
 
         .power-table td {
@@ -174,7 +174,7 @@
         }
 
         .power-table td:hover {
-            background: rgba(255, 107, 53, 0.1);
+            background: rgba(0, 123, 255, 0.1);
             transform: scale(1.05);
             color: var(--accent-orange);
             cursor: pointer;
