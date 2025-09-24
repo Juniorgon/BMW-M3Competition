@@ -11,8 +11,8 @@
         :root {
             --primary-dark: #0a0a0a;
             --secondary-dark: #1a1a1a;
-            --accent-orange: #ff6b35;
-            --accent-orange-hover: #e55a2b;
+            --accent-blue: #007bff;
+            --accent-blue-hover: #0056b3;
             --text-primary: #ffffff;
             --text-secondary: #b0b0b0;
             --glass-bg: rgba(26, 26, 26, 0.8);
@@ -50,7 +50,7 @@
         }
 
         .navbar-brand:hover {
-            color: var(--accent-orange) !important;
+            color: var(--accent-blue) !important;
             transform: scale(1.05);
         }
 
@@ -65,14 +65,14 @@
         }
 
         .nav-link:hover {
-            color: var(--accent-orange) !important;
-            background: rgba(255, 107, 53, 0.1);
+            color: var(--accent-blue) !important;
+            background: rgba(0, 123, 255, 0.1);
             transform: translateY(-2px);
         }
 
         .nav-link.active {
-            color: var(--accent-orange) !important;
-            background: rgba(255, 107, 53, 0.15);
+            color: var(--accent-blue) !important;
+            background: rgba(0, 123, 255, 0.15);
         }
 
         /* Hero Section */
@@ -96,7 +96,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 50%, rgba(0, 123, 255, 0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -117,7 +117,7 @@
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-orange) 100%);
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-blue) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -174,7 +174,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.1), transparent);
             transition: left 0.5s;
         }
 
@@ -184,13 +184,13 @@
 
         .tech-card:hover {
             transform: translateY(-10px);
-            border-color: var(--accent-orange);
-            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+            border-color: var(--accent-blue);
+            box-shadow: 0 20px 40px rgba(0, 123, 255, 0.2);
         }
 
         .tech-icon {
             font-size: 3rem;
-            color: var(--accent-orange);
+            color: var(--accent-blue);
             margin-bottom: 1rem;
             position: relative;
             z-index: 2;
@@ -215,7 +215,7 @@
 
         /* Botões modernos */
         .btn-modern {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-hover) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%);
             border: none;
             color: white;
             padding: 1rem 2rem;
@@ -226,19 +226,19 @@
             align-items: center;
             gap: 0.5rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3);
         }
 
         .btn-modern:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 30px rgba(0, 123, 255, 0.4);
             color: white;
         }
 
         .btn-outline {
             background: transparent;
             border: 2px solid var(--accent-orange);
-            color: var(--accent-orange);
+            color: var(--accent-blue);
             box-shadow: none;
         }
 
@@ -487,5 +487,4 @@
 
         // Navbar scroll effect
         window.addEventListener('scroll', function() {
-            const na
-(Content truncated due to size limit. Use page ranges or line ranges to read remaining content)
+            const navbar = document.querySelector
