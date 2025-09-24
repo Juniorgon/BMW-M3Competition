@@ -96,7 +96,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 50%, rgba(0, 123, 255, 0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -117,7 +117,7 @@
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-orange) 100%);
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-blue) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -167,13 +167,13 @@
 
         .highlight-item:hover {
             transform: translateY(-5px);
-            border-color: var(--accent-orange);
-            box-shadow: 0 15px 30px rgba(255, 107, 53, 0.2);
+            border-color: var(--accent-blue);
+            box-shadow: 0 15px 30px rgba(0, 123, 255, 0.2);
         }
 
         .highlight-icon {
             font-size: 2.5rem;
-            color: var(--accent-orange);
+            color: var(--accent-blue);
             margin-bottom: 1rem;
         }
 
@@ -192,7 +192,7 @@
 
         /* Botões modernos */
         .btn-modern {
-            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-hover) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%);
             border: none;
             color: white;
             padding: 1rem 2rem;
@@ -203,24 +203,24 @@
             align-items: center;
             gap: 0.5rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 123, 255, 0.3);
         }
 
         .btn-modern:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 30px rgba(0, 123, 255, 0.4);
             color: white;
         }
 
         .btn-outline {
             background: transparent;
-            border: 2px solid var(--accent-orange);
-            color: var(--accent-orange);
+            border: 2px solid var(--accent-blue);
+            color: var(--accent-blue);
             box-shadow: none;
         }
 
         .btn-outline:hover {
-            background: var(--accent-orange);
+            background: var(--accent-blue);
             color: white;
         }
 
@@ -302,7 +302,7 @@
             position: absolute;
             width: 2px;
             height: 2px;
-            background: var(--accent-orange);
+            background: var(--accent-blue);
             border-radius: 50%;
             opacity: 0.6;
             animation: particle-float 6s linear infinite;
@@ -476,4 +476,4 @@
 
         // Smooth scrolling para links internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventLis
+            anchor.addEventListener('click', functio
